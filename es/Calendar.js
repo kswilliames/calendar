@@ -156,6 +156,7 @@ var Calendar = function (_React$Component) {
           'div',
           { className: prefixCls + '-body' },
           React.createElement(DateTable, {
+            contentRender: props.dateCellContentRender,
             locale: locale,
             value: value,
             selectedValue: selectedValue,

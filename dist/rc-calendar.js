@@ -423,6 +423,7 @@ var Calendar = function (_React$Component) {
           'div',
           { className: prefixCls + '-body' },
           __WEBPACK_IMPORTED_MODULE_4_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__date_DateTable__["a" /* default */], {
+            contentRender: props.dateCellContentRender,
             locale: locale,
             value: value,
             selectedValue: selectedValue,
