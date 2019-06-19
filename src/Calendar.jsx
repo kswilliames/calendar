@@ -210,7 +210,7 @@ class Calendar extends React.Component {
       const rootInstance = this.rootInstance;
 
       if (!rootInstance || rootInstance.contains(document.activeElement) ||
-      (dateInput && dateInput.contains(document.activeElement))) {
+        (dateInput && dateInput.contains(document.activeElement))) {
         // focused element is still part of Calendar
         return;
       }
@@ -339,6 +339,7 @@ class Calendar extends React.Component {
           : null}
         <div className={`${prefixCls}-body`}>
           <DateTable
+            contentRender={props.dateCellContentRender}
             locale={locale}
             value={value}
             selectedValue={selectedValue}
